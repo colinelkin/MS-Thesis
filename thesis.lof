@@ -1,0 +1,22 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2-1}{\ignorespaces Overview of common localization algorithms\relax }}{10}
+\contentsline {figure}{\numberline {2-2}{\ignorespaces Example of AOA-based localization\relax }}{14}
+\contentsline {figure}{\numberline {2-3}{\ignorespaces Example of RSS Trilateration in a three-monitor WSN Setup\relax }}{15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3-1}{\ignorespaces Flowchart of DS localization algorithm.\relax }}{30}
+\contentsline {figure}{\numberline {3-2}{\ignorespaces WSN of 100 sensor nodes, 3 anchor nodes, standby node, and fusion center.\relax }}{34}
+\contentsline {figure}{\numberline {3-3}{\ignorespaces Example of expected-value-based DS algorithm in execution.\relax }}{38}
+\contentsline {figure}{\numberline {3-4}{\ignorespaces First proposed classifier.\relax }}{39}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4-1}{\ignorespaces Flowchart of DS localization algorithm\relax }}{47}
+\contentsline {figure}{\numberline {4-2}{\ignorespaces Second proposed classifier.\relax }}{51}
+\contentsline {figure}{\numberline {4-3}{\ignorespaces Plots of accuracy versus upper bound weight versus lower bound weight.\relax }}{54}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Full Accuracy}}}{54}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Short Accuracy }}}{54}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Matching Accuracy }}}{54}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Average Accuracy }}}{54}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

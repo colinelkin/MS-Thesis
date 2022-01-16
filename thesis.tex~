@@ -1,0 +1,771 @@
+\documentclass[12pt]{uthesis-v12}  %---> DO NOT ALTER THIS COMMAND
+\begin{document} %---> %---> %---> %---> DO NOT ALTER THIS COMMAND
+
+%--------+----------------------------------------------------------+
+%        |  \title{}                                    (REQUIRED)  |
+%        |  \author{}                                   (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.1 of "Read_Me_First_(v12).pdf"            |
+%        |                                                          |
+%        |  Also see section 2.2 of above "Read Me" file for the    |
+%        |  proper use of the invisible tilde ("~") character when  |
+%        |  entering a middle initial in the \author command.       |
+%        +----------------------------------------------------------+
+
+\title{Development of Novel Computational Algorithms For Localization of Wireless
+       \protect\\ Sensor Networks Using Dempster-Shafer Evidence Theory}
+
+\author{Colin P.~Elkin}
+
+%--------+----------------------------------------------------------+
+%        |  \copyrightpage{}                            (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.2 of "Read_Me_First_(v12).pdf"            |
+%        |                                                          |
+%        |  1) You must enter either "yes" or "no" in this          |
+%        |      command.  Inputting "yes" produces a copyright      |
+%        |      notification page as the second page and inputting  |
+%        |      "no" produces a blank second page.                  |
+%        |  2) Input to this command is case sensitive.             |
+%        |  3) Default: the "yes" option.                           |
+%        +----------------------------------------------------------+
+
+\copyrightpage{yes}
+
+%--------+----------------------------------------------------------+
+%        |  \mydocument{}                               (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.3 of "Read_Me_First_(v12).pdf"            |
+%        |                                                          |
+%        |  1) Input to this command is limited to the following    |
+%        |     three options: a) Dissertation                       |
+%        |                    b) Thesis                             |
+%        |                    c) Project                            |
+%        |  2) Input to this command is case-sensitive.             |
+%        +----------------------------------------------------------+
+
+\mydocument{Thesis}
+
+%--------+----------------------------------------------------------+
+%        |  \degree{}{}                                 (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.4 of "Read_Me_First_(v12).pdf"            |
+%        |                                                          |
+%        |  You need to provide two distinct inputs into this       |
+%        |  command:                                                |
+%        |     1) In the first set of braces you need to specify    |
+%        |        the *exact* degree you will receive. Some         |
+%        |        examples are: -) Masters of Arts                  |
+%        |                      -) Masters of Science               |
+%        |                      -) Doctor of Philosophy             |
+%        |     2) In the second set of braces you need to state the |
+%        |        *specific* discipline or area for that degree     |
+%        |        (e.g., Economics, Education, Engineering, etc.).  |
+%        |  Students should consult their advisor if they have any  |
+%        |  questions about this information.                       |
+%        +----------------------------------------------------------+
+
+\degree{Masters of Science}{Engineering}
+
+%--------+----------------------------------------------------------+
+%        |  \conferraldate{}{}                          (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.5 of "Read_Me_First_(v12).pdf"            |
+%        |                                                          |
+%        |  In the two set of braces enter the month and then the   |
+%        |  year your degree will be *conferred* by the university. |
+%        +----------------------------------------------------------+
+
+\conferraldate{August}{2015}
+
+%--------+----------------------------------------------------------+
+%        |  \advisor{}                                  (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.6.2 of "Read_Me_First_(v12).pdf"          |
+%        |                                                          |
+%        |  1) Also see section 2.2 of "Read_Me_First_(v12).pdf"    |
+%        |     for the proper use of the invisible tilde ("~")      |
+%        |     character when entering a middle initial or the      |
+%        |     abbreviation of an academic title (e.g., Dr.) in     |
+%        |     the \advisor{} command.                              |
+%        |  2) Also see section 3.6.1. for consistent presentation  |
+%        |     of title page signature lines.                       |
+%        +----------------------------------------------------------+
+
+\advisor{Dr.~Vijaya Devabhaktuni}
+
+%--------+----------------------------------------------------------+
+%        |  Committee Member Signature Commands         (OPTIONAL)  |
+%        |                                                          |
+%        |  See section 3.6.3 of "Read_Me_First_(v12).pdf"          |
+%        |                                                          |
+%        |  1) Use the commands below to provide signature lines    |
+%        |     for your "other" committee members;                  |
+%        |        --> you must list your other committee members    |
+%        |            in alphabetic order by last name              |
+%        |        --> to do this, use the commands below in the     |
+%        |            order presented below.                        |
+%        |  2) You can choose to include none, some, or all of the  |
+%        |     "XXXmember" commands below --- based on the number   |
+%        |     committee members you have; simply delete (or        |
+%        |     comment-out) any of the commands below that are not  |
+%        |     needed.                                              |
+%        |  3) Do not include the name of your committee chair or   |
+%        |     the Graduate Dean in the commands listed below.      |
+%        |     Their signature lines are generated by the           |
+%        |     \advisor{} and \graduatedean{}{} commands.           |
+%        |  4) You cannot use any of the commands below more than   |
+%        |     once. (For details on this issue, see section 3.6.3  |
+%        |     of "Read_Me_First_(v12).pdf".)                       |
+%        |  5) Also see section 2.2 of "Read_Me_First_(v12).pdf"    |
+%        |     for the proper use of the invisible tilde ("~")      |
+%        |     character when entering a middle initial or the      |
+%        |     abbreviation of an academic title (e.g., Dr.) in     |
+%        |     the commands below.                                  |
+%        |  6) See section 3.6.1. for consistent presentation of    |
+%        |     title page signature lines.                          |
+%        |                                                          |
+%        |  I know I shouldn't have to say this, but enough         |
+%        |  students over the years have made the same mistake      |
+%        |  that I'm forced to state:                               |
+%        |                                                          |
+%        |      THE NAMES USED IN THE FOLLOWING COMMANDS ARE        |
+%        |      SILLY NAMES I'VE USED AS EXAMPLES ONLY.  THEY       |
+%        |      ARE NOT THE ACTUAL NAMES OF YOUR COMMITTEE          |
+%        |      MEMBERS.  REPLACE THE SILLY NAMES BELOW WITH        |
+%        |      THE NAMES OF YOUR ACTUAL COMMITTEE MEMBERS.         |
+%        |                                                          |
+%        +----------------------------------------------------------+
+
+  \secondmember{Dr.~Hong Wang}
+
+   \thirdmember{Dr.~Mansoor Alam}
+
+%--------+----------------------------------------------------------+
+%        |  \graduatedean{}{}                           (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.6.4 of "Read_Me_First_(v12).pdf"          |
+%        |                                                          |
+%        |  1) THE NAME AND TITLE PROVIDED BELOW ARE THOSE OF THE   |
+%        |     ACTUAL GRADUATE DEAN AT THE TIME THIS DOCUMENT WAS   |
+%        |     CONSTRUCTED (January 2012). Contact the Graduate     |
+%        |     College to determine whether this information is     |
+%        |     correct at the time you submit your document.        |
+%        |  2) Section 2.2 of "Read_Me_First_(v12).pdf" describes   |
+%        |     the proper use of the invisible tilde ("~")          |
+%        |     character when entering a middle initial or the      |
+%        |     abbreviation of an academic title (e.g., Dr.) in     |
+%        |     the \graduatedean{} command.                         |
+%        |  3) See section 3.6.1. for consistent presentation of    |
+%        |     title page signature lines.                          |
+%        +----------------------------------------------------------+
+
+\graduatedean{Dr.~Patricia R.~Komuniecki}{Dean}
+
+%--------+----------------------------------------------------------+
+%        |  \maketitle                                  (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.7 of "Read_Me_First_(v12).pdf"            |
+%        |                                                          |
+%        |  This is a required LaTeX command; to be brief, bad      |
+%        |  things will happen if this command is not included      |
+%        |  in your document at this particular location.           |
+%        +----------------------------------------------------------+
+
+\maketitle  %---->  ----->  ---->  ---->   DO NOT ALTER THIS COMMAND
+
+%--------+----------------------------------------------------------+
+%        |  Abstract Page Environment                   (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.8 of "Read_Me_First_(v12).pdf"            |
+%        +----------------------------------------------------------+
+
+\begin{abstractpage}
+[Insert the abstract to your work here]
+\end{abstractpage}
+
+%--------+----------------------------------------------------------+
+%        |  Dedication Page Environment                 (OPTIONAL)  |
+%        |                                                          |
+%        |  See section 3.9 of "Read_Me_First_(v12).pdf"            |
+%        |                                                          |
+%        |  If both a dedication page and an acknowledgements page  |
+%        |  are included in the document, the dedication page must  |
+%        |  proceed the acknowledgements page.                      |
+%        +----------------------------------------------------------+
+
+\begin{dedication}
+\noindent To the memories of my late grandparents, John Alan Elkin and Sylvia Urang, who left us over the past year.
+\end{dedication}
+
+%--------+----------------------------------------------------------+
+%        |  Acknowledgments Page Environment            (OPTIONAL)  |
+%        |                                                          |
+%        |  See section 3.10 of "Read_Me_First_(v12).pdf"           |
+%        |                                                          |
+%        |  If both a dedication page and an acknowledgements page  |
+%        |  are included in the document, the dedication page must  |
+%        |  proceed the acknowledgements page.                      |
+%        +----------------------------------------------------------+
+
+\begin{acknowledgments}
+\noindent First and foremost, I would to express my sheer gratitude and appreciation for my advisor and thesis committee chairman Dr. Vijay Devabhaktuni for all of the amazing guidance, leadership, patience, motivation, and support with which he has provided me over the course of my graduate studies. I would also like to thank Dr. Hong Wang for the advice and guidance that he has provided for me as a co-advisor as well as [third committee member] and [fourth committee member] for graciously serving as members of the thesis committee.
+
+\noindent Secondly, I would like to thank The University of Toledo's electrical engineering and computer science department as well as their engineering technology department for providing me with financial support in the forms of graduate assistantships and tuition waivers. I would also like to express my appreciation to the National Science Foundation (NSF) for providing the EECS department with the funding for my research assistantship. I also want to thank the university's athletic department for providing me with part-time employment during the first spring and summer semesters of my graduate studies.
+
+\noindent In addition, I want to thank the current and former members of my research group in labs 1024, 2033, and 2042 for all of the assistance, support, and motivation that they have provided me over the past year. I am especially grateful for my former colleague Rajika Kumarasiri for introducing me to the vast and exciting world of graduate research as well as for allowing me extensive collaboration and involvement in his own scholarly pursuits. Without his guidance, leadership, and patience, the finished product of my research that is demonstrated in this literature would not have been possible.
+
+\noindent Most importantly, I would like to thank my parents John and Rebeca Elkin for assisting me with the initial move to Ohio to begin graduate studies as well as for providing me with consistent love and support throughout.
+\end{acknowledgments}
+
+%--------+----------------------------------------------------------+
+%        |  \tableofcontents                            (REQUIRED)  |
+%        |  \listoftables                            (CONDITIONAL)  |
+%        |  \listoffigures                           (CONDITIONAL)  |
+%        |                                                          |
+%        |  See sections 3.11 & 3.12 of "Read_Me_First_(v12).pdf"   |
+%        |                                                          |
+%        |  1) You must include the \tableofcontents command in     |
+%        |     your document: the UT Manual requires every          |
+%        |     dissertation/thesis to have a detailed table of      |
+%        |     contents.                                            |
+%        |  2) Including the \listoftables and \listoffigures       |
+%        |     commands is "conditional."  See sections 3.12 of     |
+%        |     "Read_Me_First_(v12).pdf" for additional details.    |
+%        +----------------------------------------------------------+
+
+\tableofcontents  %----->  ----->  ---->  DO NOT ALTER THIS COMMAND
+\listoftables \listoffigures
+
+%--------+----------------------------------------------------------+
+%        |  \captionformat{}                            (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.12.2 of "Read_Me_First_(v12).pdf"         |
+%        |                                                          |
+%        |  1) You are required to choose between the "hang" or     |
+%        |     "align" option for this command.                     |
+%        |  2) Input to this command is case sensitive.             |
+%        |  3) Default: ``hang'' option.                            |
+%        +----------------------------------------------------------+
+
+\captionformat{hang}
+
+%--------+----------------------------------------------------------+
+%        |  List of Abbreviations Environment           (OPTIONAL)  |
+%        |                                                          |
+%        |  See section 3.13 of "Read_Me_First_(v12).pdf"           |
+%        |                                                          |
+%        |  1) This is an optional section; consult your advisor    |
+%        |     to determine whether you need/want to include this   |
+%        |     section in your document.                            |
+%        |  2) If you do not want a List of Abbreviations simply    |
+%        |     delete the material below (and these instructions).  |
+%        |  3) If you do want a List of Abbreviations simply        |
+%        |     replace the silly material below with the            |
+%        |     information relevant to your document.               |
+%        |     a. Within the "listofabbreviations" environment      |
+%        |        below you must use a separate \abbreviation{}{}   |
+%        |        command for each entry in your List of            |
+%        |        Abbreviations.                                    |
+%        |     b. As the examples below demonstrate, the            |
+%        |        information within the first set of braces is     |
+%        |        the abbreviation and the information in the       |
+%        |        second set of braces is the definition of that    |
+%        |        abbreviation.                                     |
+%        +----------------------------------------------------------+
+
+\begin{listofabbreviations}
+
+ \abbreviation{ABBREV}{This is where you provide a brief
+                       definition of the abbreviation ``ABBREV''}
+     \abbreviation{BB}{B.B.~King}
+    \abbreviation{BSE}{Bovine Spongiform Encephalopathy (Mad Cow
+                       Disease)}
+     \abbreviation{CB}{L.D. Caskey and J.D. Beazley, \emph{Attic
+                       Vase Paintings in the Museum of Fine
+                       Arts}, Boston (Oxford 1931--1963)}
+    \abbreviation{GLE}{Gauss' law for electricity: $\nabla\cdot E
+                       = \displaystyle\frac{\rho}{\varepsilon_0}
+                       = 4\pi k \rho$}
+    \abbreviation{HHS}{Department of Health and Human Services}
+    \abbreviation{IaR}{I am root}
+
+\end{listofabbreviations}
+
+%--------+----------------------------------------------------------+
+%        |  List of Symbols Environment                 (OPTIONAL)  |
+%        |                                                          |
+%        |  See section 3.14 of "Read_Me_First_(v12).pdf"           |
+%        |                                                          |
+%        |  1) This is an optional section; consult your advisor    |
+%        |     to determine whether you need/want to include this   |
+%        |     section in your document.                            |
+%        |  2) If you do not want a List of Symbols simply delete   |
+%        |     the material below (and these instructions).         |
+%        |  3) If you do want a List of Symbols simply replace the  |
+%        |     silly material below with the information relevant   |
+%        |     to your document.                                    |
+%        |       a. Within the "listofsymbols" environment below    |
+%        |          you must use a separate \emblem{}{} command     |
+%        |          for each entry in your List of Symbols.         |
+%        |       b. As the examples below show, insert your symbol  |
+%        |          within the first set of braces in the           |
+%        |          \emblem{}{} command, and its definition within  |
+%        |          the second set of braces.                       |
+%        |       c. Use the \emblemskip command to insert a blank   |
+%        |          line between different categories of symbols:   |
+%        |          -) such additional spacing is required between  |
+%        |             different categories of symbols;             |
+%        |          -) see "Read_Me_First_(v12).pdf" for details.   |
+%        +----------------------------------------------------------+
+
+\begin{listofsymbols}
+
+ \emblem{$\ddagger$}{the degree to which the flayrod has gone out of
+                    skew on tredel}
+\emblem{$\triangle$}{the ratio of the M2 monetary aggregate to the
+                    Monetary Base}
+
+       \emblemskip
+
+  \emblem{$\alpha$}{angle of rotation around internal rotation axis}
+   \emblem{$\beta$}{the number of people named ``Bob''}
+
+       \emblemskip
+
+         \emblem{Q}{Tobin's q; the ratio of the market value of
+                    installed capital to the replacement cost of
+                    capital}
+         \emblem{Y}{Gross Domestic Product (adjusted for inflation)}
+
+\end{listofsymbols}
+
+%--------+----------------------------------------------------------+
+%        |  Preface Environment                         (OPTIONAL)  |
+%        |                                                          |
+%        |  See section 3.15 of "Read_Me_First_(v12).pdf"           |
+%        +----------------------------------------------------------+
+
+\begin{preface}
+This thesis is the result of my master's degree research, which was conducted in the area of wireless sensor networks with partculuar focus in localization algorithms that utilize Dempster-Shafer Evidence Theory for powerful extrapolation of what would otherwise be incomplete data.
+
+\end{preface}
+
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+%--------+----------------------------------------------------------+
+%        |  \makebody                                   (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.16 of "Read_Me_First_(v12).pdf"           |
+%        |                                                          |
+%        |  This is a *required* UThesis command; again, bad        |
+%        |  things will happen if this command is not included in   |
+%        |  your document at this particular location --- see the   |
+%        |  file "Read_Me_First_(v12).pdf" for details.             |
+%        +----------------------------------------------------------+
+
+\makebody   %------->  ------->  ------->  DO NOT ALTER THIS COMMAND
+
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+%--------+----------------------------------------------------------+
+%        |  \chapter{}                                  (REQUIRED)  |
+%        |                                                          |
+%        |  See section 3.17 of "Read_Me_First_(v12).pdf"           |
+%        |                                                          |
+%        |  For guidance on using the commands \chapter{},          |
+%        |  \section{}, \subsection{}, \subsubsection{}, etc., see  |
+%        |  Leslie Lamport's "LaTeX: A Document Preparation         |
+%        |  System." Addison Wesley: Reading Massachusetts, 1985.   |
+%        +----------------------------------------------------------+
+
+% CHAPTER ONE
+
+\chapter{Introduction}
+
+~Wireless sensor networks have been of increasingly great interest due to the wide variety of applications in which this technology can be applied. Practicality can range from long distance navigational systems and large scale military surveillance to localized contact points for emergency services and even small scale biosensors for monitoring individual human performance.
+
+While the demand for and scope of wireless sensor networks continue to grow, the need for identifying a node's location within such a network becomes one of great importance. However, achieving localization with a steady balance of minimal power, minimal overall cost, and high accuracy remains one of the greatest challenges in the area of wireless sensor networks. [discuss previous techniques] While many novel algorithms have been developed in recent years to address this balance, most of these are extensively iterative, follow an exhaustive guess-and-check approach, or both. This is primarily due to the incomplete or unrelatable nature of the data that is initially processed. 
+
+\section{Overview of Localization}
+
+~Types of data that are particularly useful in localization include received signal strength (RSS), angle of arrival (AOA), operating condition (whether or not a sensor is in standby mode), time of arrival (TOA), and time difference of arrival (TDOA). In the context of this research, RSS is defined as the electric field at the receiving node divided by the distance between said node and the transmitting antenna. AOA is a measurement dependent on TDOA of multiple elements in an array. In return, TDOA is obtained by measuring the difference between phases received by two elements in said array. TOA, on the other hand, is simply the amount of time required for a signal to travel from one transmitter to a receiving node. In the context of this research setup, AOA is the arrival angle of the emitted source signal observed at a monitor. 
+
+[Discuss how these types of data can be used for localization (trilateration, multilateration, etc.)]
+
+[Discuss structure of WSN: nodes, base stations, etc]
+
+Since most of these data types appear to have indirect rather than direct relations with one another, the concept of data fusion becomes one of particular importance. 
+
+\section{Overview of Data Fusion}
+
+~Data fusion is a valuable and streamlined process that involves obtaining many different types of data from a single common application and integrating them into a unified, consistent representation. While an array of similar data is relatively simple to implement in the context of data fusion, more relevant aspects of data fusion are the result of widely varying types of data that derive from a multitude of different sensor types. In the event of such a large magnitude of complexity within the field of data fusion, a significant amount of creativity and elaboration is needed to solve such a problem. To the benefit of this research, one problem solving technique exists to provide a powerful and straightforward approach to fusing dissimilar data types, although its application of the field of wireless sensor networks, as well as that of sensors in general, is one of recent development, whose potential therefore remains largely untapped. As the title of this thesis suggests, this technique is none other than Dempster-Shafer Evidence Theory.
+
+\section{Overview of Dempster-Shafer Theory}
+
+~Dempster-Shafer Theory, herein referred as DS Theory or DST, is a statistical framework that is based on Bayesian combinational probability but undertakes a drastically different foundation with regards to combinational factors. While Bayesian statistics rely primarily upon combinations of internal probability factors within a system, usually through the use of propositions or random variables, DS Theory is contingent upon external evidence factors, each one typically consisting of a range of data in which the desired output value can be found and a probability of confidence that the data range is in fact reliable. Because DST is still a relatively new concept in the scope of this research, a brief example that shows a fundamental contrast between DST-based probability and its traditional Bayesian counterpart is provided for the benefit of the reader.
+
+\section{DS Theory Example}
+
+~To simplify both methods in the context of a practical example, suppose there exists a car that is due to fail at some given moment and has three factors that are the most likely to result in the vehicle’s failure, which will only occur if all three of these components fail individually. In the context of this example, the three components are the car’s worn out spark plugs, depleting oil, and aging transmission fluid, herein referred as Components 1, 2, and 3, respectively. The objective of this problem is now to find out the overall probability of the car failing within one week. The Bayesian approach would involve measuring the failure rates of each individual component and combining the factors to determine the overall system failure probability. For the sake of having specific values, suppose the probabilities of Components 1, 2, and 3 respectively failing within one week are .6, .4, and .2. By use of combinational logic in the form of OR gates (as each component’s failure rate is independent of one another), we can conclude that the combined probability of the car failing within one week to be .6 * .4 * .2 = .048, or 4.8 percent. We have now obtained the probability of system failure for a fixed length of time, but if we were to go beyond this context and find more meaningful information, such as the amount of time expected to elapse before reaching 100 percent failure, a different approach would be needed. 
+
+To apply the same example with DS Theory, we will now obtain external evidence factors, which in the context of this problem will be: three mechanics, herein referred as Mechanics A, B, and C. Each mechanic inspects the vehicle as a whole, including all three aforementioned components and any other possible aspect of the car and then give an interval of time at which the vehicle is expected to fail as well as the degree of confidence in which the mechanic is certain of these time values. Suppose the vehicle is first taken to its original dealership, which has two mechanics, A and B, that specialize in the exact make and model of this vehicle and hence are highly confident in their predicted time range in which the car will fail, despite the fact that A’s time range differs from that of B. Mechanic A concludes that total failure will occur between 11 and 18 days in the future, while Mechanic B is certain that failure will happen between 14 and 21 days from the present. Next, the car is taken to a more general purpose, non-dealer specific repair shop, whose expert, Mechanic C, is less familiar with the specific make and model of this car when compared to the expertise of Mechanics A and B and thus concludes at half the confidence level of the other experts that vehicle-level failure will occur between 10 and 20 days into the future. 
+
+Now that all confidence levels have been compared, we can deduce that A and B have equal confidence levels of .4 each, and that C has a confidence level of .2 (half that of the other mechanics). With all of this data intact, we have gathered the evidence factors in the form of [lower bound, upper bound, confidence] to be [11, 18, .4] for A, [14, 21, .4] for B, and [10, 20, .2] for C. By the conditions associated with DS Theory we can now conclude that the plausibility of vehicular failure to begin after 14 days and the belief of total failure to begin after 21 days. In other words, while we were able to use Baynesian probability to determine the probability of a car failing after the exact elapsed time of one week, DST allowed us to go a step further and find the amount of time at which one hundred percent failure was imminent, which in this case was three weeks.
+
+\section{Proposed Localization Techniques}
+
+~Fault or failure prediction is just one of many possible applications that can be enhanced with DS Theory. Other relevant applications, that is, ones that are more closely related with wireless sensor networks and with the aim and scope of this research, include the use of different node measurements (RSS, AOA, etc.) to predict the distance from a node to a monitoring station, [content from Chapter 4 algorithm goes here], and [content from Chapter 5 algorithm goes here.]. From these potential problem setups, two novel localization schemes are proposed in the body of this thesis.
+
+The first technique is based on the expected value function of DS Theory and uses basic probability assignments (BPAs) of distance ranges to predict an expected range of radii between a given base station and the potential location of a sensor node. To enhance accuracy, all BPAs are used as distributions for a normalized inverse sample of 10 BPAs, which are then aggregated into a single data structure to be used in all further evaluation. When these radii are obtained for all working monitors, an area of feasible positions is obtained, which can be used to determine whether a particular node in a particular county matches the given set of measurements (RSS, AOA, operating condition, or a combination thereof) corresponding to aforementioned distance BPAs.
+
+The second method revolves around the plausibility function of DS Theory. Like the previous technique, BPAs are formed from distance values corresponding to various types of measurements similar to those mentioned above. The fundamental difference, however, is that instead of using an expected value function to predict a distance range, a plausibility function is utilized to determine the most plausible radius from a monitor to a node's location. Because this is a single value rather than a range, the value is used as a coefficient for a data range that is compared against a county's actual value. If the actual distance is between 95 and 170 percent of the predicted distance for every respective monitor, then the decision is made that the given set of measurements belongs to the given county.
+
+\section{Research Objectives}
+
+~The localization of a node, or identification of a node's location within a wireless sensor network, is a challenge of both great importance and great difficulty. The objective of this research is to utilize Dempster-Shafer Theory as an innovative statistical mechanism for developing highly accurate and low cost algorithms for localization in wireless sensor networks.
+
+\section{Publications and Contributions to Thesis}
+
+~The major publications and contributions of this research are presented as follows in Table 1.1.
+
+[table goes here]
+
+The vast majority of this research is based heavily upon the second publication. The first contribution served as a chapter for the master's thesis of its primary author and hence the resultant research thereof will not be discussed at great length.
+
+\section{Thesis Organization}
+
+\noindent This thesis unfolds as follows:
+
+Chapter 2 provides a review of the literature that forms the foundation of this research. It covers a variety of theoretical backgrounds pertaining to research methods previously done in the areas of wireless sensor networks, localization techniques thereof, data fusion, predictive data modelling, and Dempster-Shafer Theory.
+
+Chapter 3 describes the first proposed localization scheme, a verbose method that focuses on the expected value property that dwells within DS Theory.
+
+Chapter 4 elaborates upon the second proposed localization algorithm, a low cost, highly accurate technique based primarily upon the plausibility method that is embedded within DS Theory. 
+
+Chapter 5 draws conclusive remarks and discusses possible future directions in which this research could advance. 
+
+Finally, the thesis ends with two appendices, the first of which presents the MATLAB source code used in the implementations of these algorithms and the second of which provides extensive mathematical proofs that are used to derive all relevant solutions.
+
+% CHAPTER TWO
+
+\chapter{Literature Review}
+
+\section{Overview}
+
+This chapter provides an extensive background of prior established research methods in the many fundamental concepts that form the foundation of this thesis research. Because this is the first time that Dempster-Shafer Theory has crossed all of the research realms of wireless sensor networks, data fusion, and predictive data modelling, each of these four topics are addressed as four separate sections of the same names. DS Theory is an exception to this structure, however, as it is covered in a broader section regarding combinational probability. This is done with the intent of providing a thorough contrast between standard Bayesian probability theory and the more atypical qualities of Dempster-Shafer Theory.
+
+\section{Wireless Sensor Networks}
+
+\subsection{High Cost Localization Methods}
+
+\subsubsection{Wireless Local Area Networks (WLAN)}
+
+\subsubsection{Bluetooth}
+
+\subsubsection{Global Positioning Satellite (GPS) Systems}
+
+\subsubsection{Indoor Navigational Systems (INS)}
+
+\subsection{Low Cost Methods and Terminologies}
+
+\subsubsection{Time of Arrival}
+
+\subsubsection{Time Difference of Arrival}
+
+[Discuss multilateration]
+
+\subsubsection{Angle Of Arrival}
+
+\subsubsection{Received Signal Strength}
+
+[Discuss trilateration, then transition to bilateration]
+
+[Include figures]
+
+\section{Data Fusion} 
+
+[Discuss GPS/INS fusion, RSS/TDOA fusion]
+
+\subsection{GPS and INS Data}
+
+\subsection{RSS and TDOA Data}
+
+\section{Predictive Data Modelling}
+
+\subsection{Neural Networks}
+
+[Discuss machine learning (training, validation, etc.)]
+
+\subsection{Maximum Likelihood Decision}
+
+\subsection{Support Vector Machines}
+
+\subsection{Data Mining}
+
+\section{Combinational Probability}
+
+\subsection{Bayesian Statistics}
+
+\subsubsection{Theory}
+
+\subsubsection{Applications}
+
+\subsection{Dempster-Shafer Theory}
+
+\subsubsection{Theory}
+
+\subsubsection{General Applications}
+
+\subsubsection{WSN Applications}
+
+% CHAPTER THREE
+      
+\chapter{A Verbose Localization Technique Based On Expected Value Outputs of Basic Probability Assignments}
+
+\section{Overview}
+
+This verbose, introductory technique provides what can be regarded as a handholding approach to the previously untapped, unexplored terrain that forms when merging DST with WSNs. Because the overall goal of this study is to predict an evidence-based location, this study is based on the expected value function of DS Theory and uses basic probability assignments (BPAs) of distance ranges to predict an expected range of radii between a given base station and the potential location of a sensor node. To enhance accuracy, all BPAs are used as distributions for a normalized inverse sample of 10 BPAs, which are then aggregated into a single data structure to be used in all further evaluation. When these radii are obtained for all working monitors, an area of feasible positions is obtained, which can be used to determine whether a particular node in a particular county matches the given set of measurements (RSS, AOA, operating condition, or a combination thereof) corresponding to aforementioned distance BPAs. [Briefly discuss accuracy results] This approach serves as an adequate start to exploring DS Theory by providing a moderately high long accuracy (see Subsection 3.3.5 for an explanation on long versus short accuracy) and an easily understandable visual approach to location prediction, but a poor short accuracy leaves this method to be just that, a starter method.
+
+\section{Theory and Calculation}
+
+[Expand upon items from Lit Review]
+
+[Include some of code as well as flow chart of algorithm.]
+
+\section{Methods and Materials}
+
+A varied plethora of WSN simulation scenarious was created and analyzed using the MATLAB scientific programming environment. The resultant software package included all facets needed for experimental simulation, including selectively randomized generation of data, complete implementation of the algorithm proposed in the previous section, and extensive calculation of the algorithm's accuracy for every individual scenario.
+
+\subsection{Data Generation}
+
+\subsection{WSN Setup}
+
+\subsection{Algorithm Execution}
+
+\subsection{Desired Outputs}
+
+\subsection{Accuracy Calculation}
+
+\section{Experimental Results}
+
+\section{Discussion}
+
+\section{Conclusions and Future Work}
+
+This approach serves as an adequate start to exploring DS Theory by providing a moderately high long accuracy and an easily understandable visual approach to location prediction, but a poor short accuracy leaves this method to be just that, a starter method. Luckily, the following approach presented in the next chapter addresses and resolves all shortcomings incurred by this method at the moderate expense of less verbosity.
+
+[Write about how to improve the algorithm here.]
+
+% CHAPTER FOUR
+
+\chapter{A High Speed, High Accuracy Method of Localization Using Estimation By Plausibility}
+
+\section{Overview}
+
+[Discuss successes and shortfalls of previous method, then how this method improves upon it]
+
+\section{Theory and Calculation}
+
+[Include some of code as well as flow chart of algorithm.]
+
+\section{Material and Methods}
+
+[discuss similarities and differences between this and previous chapter]
+
+\subsection{Data Generation}
+
+\subsection{WSN Setup}
+
+\subsection{Algorithm Execution}
+
+\subsection{Desired Outputs}
+
+\subsection{Accuracy Calculation}
+
+\section{Experimental Results}
+
+\section{Discussion}
+
+\section{Conclusions}
+
+[Write about how to improve the algorithm here.]
+
+% CHAPTER FIVE
+
+\chapter{Conclusions and Future Work}
+
+\section{Conclusions}
+
+[Conclusion goes here.]
+
+\section{Future Work}
+
+\subsection{Three-Dimensional WSN's For Application of Noninvasive Body Sensors}
+
+\subsection{Fusion of DS Theory With Support Vector Machines}
+
+\subsection{Role of DS Theory Within Data Mining and Big Data Analytics}
+
+
+
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+%--------+----------------------------------------------------------+
+%        |  \myreferences{}                          (CONDITIONAL)  |
+%        |                                                          |
+%        |  See section 3.18 of "Read_Me_First_(v12).pdf"           |
+%        |                                                          |
+%        |  That section of the READ ME file describes two options  |
+%        |  for listing the works cited in your document: first,    |
+%        |  manually entering your list of references and, second,  |
+%        |  using BibTeX to generate that list.                     |
+%        |                                                          |
+%        |  1) If you manually enter your reference list, first     |
+%        |     include the \myreferences command, as illustrated    |
+%        |     below.  Second, use the "referencelist" environment  |
+%        |     described below.  For this, note that the UT Manual  |
+%        |     requires double-spacing *between* references in      |
+%        |     that list. However, it also states that *within*     |
+%        |     individual references the spacing may be single- or  |
+%        |     double-spaced.  Because of this, UThesis provides    |
+%        |     two options for the "referencelist" environment:     |
+%        |                                                          |
+%        |            \begin{referencelist}{ENTER OPTION HERE}      |
+%        |            \item ...                                     |
+%        |            \end{referencelist}                           |
+%        |                                                          |
+%        |     a. Replacing "ENTER OPTION HERE" above with the      |
+%        |        text "single" will generate a reference list      |
+%        |        with single-spaced entries in that list but       |
+%        |        double-spacing between those entries. An example  |
+%        |        of this is provided below.                        |
+%        |     b. Alternatively, using the "double" option will     |
+%        |        generate a list with double-spaced entries and    |
+%        |        double-spacing between entries. An example of     |
+%        |        this is also provided below.                      |
+%        |                                                          |
+%        |     Note that input to these options is case sensitive   |
+%        |     and the default setting is the "double" option.      |
+%        |                                                          |
+%        |  2) If you instead choose to use BibTeX to generate the  |
+%        |     reference list, then you *cannot* include either     |
+%        |     the "\myreferences" command or the "referencelist"   |
+%        |     environment in your document. In this case you must  |
+%        |                                                          |
+%        |     a. delete the \myreferences command and the two      |
+%        |        examples of the "referencelist"  environment      |
+%        |        below;                                            |
+%        |     b. then you must add and locate appropriately all    |
+%        |        necessary BibTeX commands within your document    |
+%        |        (e.g., \bibliographystyle{}, \citationstyle{},    |
+%        |        \bibliography{}, etc.).                           |
+%        +----------------------------------------------------------+
+
+\myreferences
+
+                                          %%%%%%%%%%%%%%%%%%%%%%
+                                          %% DELETE THIS WHEN
+ \hfill \fbox{First example: references   %% CONSTRUCTING YOUR
+ generated by the ``single'' option}      %% OWN REFERENCE LIST
+                                          %%%%%%%%%%%%%%%%%%%%%%
+
+\begin{referencelist}{single}
+\item \textbf{Friedman, Milton}, ``The Role of Monetary Policy,''
+      \emph{American Economic Review}, March 1968, 58(1), 1--17.
+
+\item \textbf{Keynes, John Maynard}, \emph{The General Theory of
+      Employment, Interest, and Money}, New York: Harcourt Brace
+      Jovanovic, 1936.
+
+\item \textbf{Smith, Adam}, \emph{An Inquiry into the Nature and
+      Causes of the Wealth of Nations}, Edwin Cannan, ed.,
+      London: Methuen \& Co., Ltd. 1904.
+
+\item \textbf{Tobin, James}, ``A Dynamic Aggregative Model,''
+      \emph{Journal of Political Economy,} April 1955, 63(2),
+      103--115.
+\end{referencelist}
+
+                                          %%%%%%%%%%%%%%%%%%%%%%
+                                          %% DELETE THIS WHEN
+ \hfill \fbox{Second example: references  %% CONSTRUCTING YOUR
+ generated by the ``double'' option}      %% OWN REFERENCE LIST
+                                          %%%%%%%%%%%%%%%%%%%%%%
+
+\begin{referencelist}{double}
+\item \textbf{Friedman, Milton}, ``The Role of Monetary Policy,''
+      \emph{American Economic Review}, March 1968, 58(1), 1--17.
+
+\item \textbf{Keynes, John Maynard}, \emph{The General Theory of
+      Employment, Interest, and Money}, New York: Harcourt Brace
+      Jovanovic, 1936.
+
+\item \textbf{Smith, Adam}, \emph{An Inquiry into the Nature and
+      Causes of the Wealth of Nations}, Edwin Cannan, ed.,
+      London: Methuen \& Co., Ltd. 1904.
+
+\item \textbf{Tobin, James}, ``A Dynamic Aggregative Model,''
+      \emph{Journal of Political Economy,} April 1955, 63(2),
+      103--115.
+\end{referencelist}
+
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+%--------+----------------------------------------------------------+
+%        |  \appendix                                  (IF NEEDED)  |
+%        |                                                          |
+%        |  See section 3.19 of "Read_Me_First_(v12).pdf"           |
+%        |                                                          |
+%        |  1) When you include the \appendix command a subsequent  |
+%        |     \chapter{} command will not generate a chapter but   |
+%        |     an appendix section.                                 |
+%        |                                                          |
+%        |  2) As is illustrated below, to generate a second or     |
+%        |     third appendix you simply have to include            |
+%        |     additional \chapter{} commands (i.e., you DO NOT     |
+%        |     have to repeat the use of the \appendix command).    |
+%        +----------------------------------------------------------+
+
+\appendix
+
+\chapter{Source Code}
+
+
+
+%====================================================================
+
+\chapter{Mathematical Proofs of Given Solutions}
+
+
+
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+%--------+----------------------------------------------------------+
+%        |  \end{document}                              (REQUIRED)  |
+%        |                                                          |
+%        |  Details (if you can call them "details") are provided   |
+%        |  in section 3.20 of "Read_Me_First_(v12).pdf"            |
+%        +----------------------------------------------------------+
+
+\end{document} %---> ---> ---> --->   DO NOT ALTER THIS COMMAND
+
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
